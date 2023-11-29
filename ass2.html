@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Product Form</title>
+    <!--Walaa Zakarnah - 202010999-->
+    <style>
+      * {
+        font-family: sans-serif;
+        box-sizing: border-box;
+      }
+      h1 {
+        background-color: #007bff;
+        text-align: center;
+        color: white;
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+      form {
+        margin: auto;
+        width: 50%;
+      }
+      input,
+      label,
+      select {
+        width: 100%;
+      }
+
+      h1,
+      label,
+      option,
+      select {
+        text-transform: capitalize;
+      }
+      input,
+      select,
+      option {
+        border: 1px #ccc solid;
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+      label {
+        margin-bottom: 5px;
+      }
+      .submit1 {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>new product</h1></header>
+
+    <form method="get">
+      <label for="prodname">product name:</label>
+      <input type="text" name="proname" id="prodname" />
+
+      <label for="price">product price:</label>
+      <input type="number" name="proprice" id="price" min="0" />
+
+      <label for="quantity">product quantity:</label>
+      <input type="number" name="proquantity" id="quantity" min="0" />
+
+      <label for="url">product image URL:</label>
+      <input type="url" name="prourl" id="url" />
+      <label for="sel">product category:</label>
+      <select name="pros" id="sel">
+        <option value="Electronics">electronics</option>
+        <option value="Clothing">clothing</option>
+        <option value="Home">home</option>
+        <option value="Toys">toys</option>
+        <option value="Other">other</option>
+      </select>
+      <input type="submit" class="submit1" />
+    </form>
+  </body>
+</html>
